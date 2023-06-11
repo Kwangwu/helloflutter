@@ -20,7 +20,7 @@ class _TempPageState extends State<TempPage> {
         () => ListView(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       children: [
-        const Padding(
+        Padding(
           padding: EdgeInsets.only(top: 30),
           child: Row(
             children: [
@@ -32,19 +32,19 @@ class _TempPageState extends State<TempPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "홍길동님",
+                    "정광우님",
                     style: TextStyle(
                       fontSize: 30,
                     ),
                   ),
                   Text(
-                    "국민내일배움카드",
+                    "프로필 변경",
                     style: TextStyle(
-                      fontSize: 25,
+                      fontSize: 15,
                     ),
                   ),
                   SizedBox(
-                    height: 30,
+                    height: 15,
                   )
                 ],
               )
@@ -58,7 +58,7 @@ class _TempPageState extends State<TempPage> {
                 color: const Color.fromRGBO(178, 204, 255, 0.7),
                 width: 5,
               )),
-          child: const Padding(
+          child: Padding(
             padding: EdgeInsets.symmetric(
               vertical: 20,
               horizontal: 30,
@@ -71,26 +71,18 @@ class _TempPageState extends State<TempPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "나의 카드",
+                          "프로필 편집",
                           style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w600,
                               color: Color.fromRGBO(0, 50, 50, 0.6)
                           ),
                         ),
-                        Text(
-                          "카드발급결정",
-                          style: TextStyle(
-                              fontSize: 24,
-                              fontWeight: FontWeight.w600,
-                              color: Color.fromRGBO(0, 130, 153, 1)
-                          ),
-                        ),
                       ],
                     ),
                     Spacer(),
                     Icon(
-                      Icons.credit_card,
+                      Icons.manage_accounts,
                       size: 80,
                     ),
                   ],
@@ -107,7 +99,7 @@ class _TempPageState extends State<TempPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "나의 상담",
+                          "내 게시물",
                           style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w600,
@@ -117,7 +109,7 @@ class _TempPageState extends State<TempPage> {
                         Row(
                           children: [
                             Text(
-                              "상담내역",
+                              "게시물",
                               style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.w600,
@@ -125,7 +117,7 @@ class _TempPageState extends State<TempPage> {
                               ),
                             ),
                             Text(
-                              "0건",
+                              "8건",
                               style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.w600,
@@ -138,7 +130,7 @@ class _TempPageState extends State<TempPage> {
                     ),
                     Spacer(),
                     Icon(
-                      Icons.chat_outlined,
+                      Icons.edit_calendar,
                       size: 80,
                     ),
                   ],
@@ -155,7 +147,7 @@ class _TempPageState extends State<TempPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "나의 훈련",
+                          "Messenger",
                           style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w600,
@@ -165,7 +157,7 @@ class _TempPageState extends State<TempPage> {
                         Row(
                           children: [
                             Text(
-                              "훈련수료",
+                              "Messenger",
                               style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.w600,
@@ -173,7 +165,7 @@ class _TempPageState extends State<TempPage> {
                               ),
                             ),
                             Text(
-                              "1건",
+                              "5건",
                               style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.w600,
@@ -186,7 +178,7 @@ class _TempPageState extends State<TempPage> {
                     ),
                     Spacer(),
                     Icon(
-                      Icons.inventory_outlined,
+                      Icons.forum,
                       size: 80,
                     ),
                   ],
@@ -203,38 +195,18 @@ class _TempPageState extends State<TempPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "나의 관심(훈련)",
+                          "설정 및 개인보안",
                           style: TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.w600,
                               color: Color.fromRGBO(0, 50, 50, 0.6)
                           ),
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              "관심훈련",
-                              style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color.fromRGBO(0, 50, 50, 0.6)
-                              ),
-                            ),
-                            Text(
-                              "0건",
-                              style: TextStyle(
-                                  fontSize: 24,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color.fromRGBO(0, 130, 153, 1)
-                              ),
-                            ),
-                          ],
-                        ),
                       ],
                     ),
                     Spacer(),
                     Icon(
-                      Icons.pending_actions_outlined,
+                      Icons.admin_panel_settings,
                       size: 80,
                     ),
                   ],
@@ -272,14 +244,14 @@ class _TempPageState extends State<TempPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.screen_search_desktop_outlined,
+              Icons.supervisor_account,
               size: 40,
             ),
-            label: "과정검색",
+            label: "친구",
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.person,
+              Icons.account_circle,
               size: 40,
             ),
             label: "나의 정보",
@@ -289,7 +261,7 @@ class _TempPageState extends State<TempPage> {
               Icons.notifications_outlined,
               size: 40,
             ),
-            label: "도움말",
+            label: "알림",
           ),
         ],
       ),
@@ -317,7 +289,7 @@ class _TempPageState extends State<TempPage> {
           style: TextStyle(color: Colors.black87, fontSize: 25),
         ),
       ),
-      actions: const [
+      actions: [
         Icon(
           Icons.search,
           color: Colors.black87,
